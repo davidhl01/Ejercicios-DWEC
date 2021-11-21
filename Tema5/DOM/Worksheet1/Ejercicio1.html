@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Worksheet #1</title>
+    </head>
+    <body>
+        <pre>
+            1. Crea una página web con al menos tres párrafos de texto y dentro de ellos un número
+            indeterminado de enlaces (al menos uno debe enlazar a google). Haciendo tan sólo
+            uso del DOM muestra los siguientes datos:
+                • Número de enlaces de la página
+                • Dirección a la que enlaza el penúltimo enlace
+                • Numero de enlaces que enlazan a google
+                • Número de enlaces del tercer párrafo
+
+            4. Crea una web con una lista de elementos y un botón que cada vez que pulsemos
+            introduzca una entrada nueva en la lista.
+
+            5. Estás diseñando una aplicación web para subir ficheros al servidor. Haciendo uso de
+            DOM, consigue que el usuario pueda adjuntar tantos ficheros como desee. Por tanto
+            inicialmente será necesario un input de tipo fichero, un botón “Adjuntar otro fichero”
+            y un segundo botón “Enviar”, de modo que al pulsar el primero de los botones
+            automáticamente aparezca otro input para elegir fichero.
+
+            6. Se desea realizar mediante DOM un visor de imágenes. Para ello en tu página se
+            mostrará una imagen, junto a dos botones “Siguiente” y “Anterior”. Impleméntala la
+            funcionalidad para poder navegar entre un conjunto de imágenes que tendrás
+            previamente preparadas.
+        </pre>
+        <p>Este es el párrafo 1 del ejercicio 1.
+            <a href="https://google.es">Enlace a google</a></p>
+
+        <p>Este es el párrafo 2 del ejercicio 1.
+            <a href="https://educacionadistancia.juntadeandalucia.es/centros/granada/my/">Enlace a centros Granada</a></p>
+
+        <p>Este es el párrafo 3 del ejercicio 1.<br>
+            <a href="https://educacionadistancia.juntadeandalucia.es/centros/granada/my/">Enlace a centros Granada</a><br>
+            <a href="https://educacionadistancia.juntadeandalucia.es/centros/granada/my/">Enlace a centros Granada</a></p>
+
+        <ul class="list">
+
+        </ul>
+        <button id="addelement">Añadir Elemento</button>
+        <br>
+        <br>
+        <form id="subirimagenes" method="post" action="">
+            <input type="file" name="imagen[]" accept="image/*"/>
+            <br>
+            <br>
+            <input type="submit" id="enviar">
+        </form>
+        <br>
+        <button id="addimage">Añadir Imagen</button>
+        <br>
+        <img id="imgslider" src="" width="300px"/>
+        <br/>
+        <button id="imganterior">Anterior</button>
+        <button id="imgsiguiente">Siguiente</button>
+
+        <script type="text/javascript" src="Ejercicio1.js"></script>
+    </body>
+</html>
