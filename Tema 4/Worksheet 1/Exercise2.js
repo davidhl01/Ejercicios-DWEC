@@ -1,0 +1,1 @@
+onmousemove = function(e){document.write("mouse location:", e.clientX, e.clientY)}

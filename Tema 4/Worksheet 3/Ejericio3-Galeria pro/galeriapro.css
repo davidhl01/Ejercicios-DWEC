@@ -1,0 +1,28 @@
+#imagen{
+    width: 300px;
+    height: 300px;
+}
+
+#anterior{
+    width: 24px;
+    position: relative;
+    top: -140px;
+}
+
+#siguiente{
+    width: 24px;
+    position: relative;
+    top: -140px;
+}
+
+#numeropagina{
+    background-color: transparent;
+    position: relative;
+    left: 150px;
+    top: 40px;
+}
+
+button{
+    border: none;
+    background: none;
+}
