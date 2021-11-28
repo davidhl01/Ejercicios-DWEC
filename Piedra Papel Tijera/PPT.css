@@ -1,0 +1,42 @@
+body{
+    background-color: darkslategrey;
+    font-family:'Courier New', Courier, monospace;
+    margin-right: 550px;
+    margin-left: 550px;
+}
+
+#contenido{
+    background-color:lightgreen;
+    padding-top: 5px;
+    text-align: center;
+    border: 2px solid black;               
+}
+     
+#Titulo{
+    color:lightgreen;
+    text-align: center;
+}
+
+#divboton{
+    padding-left: 170px;
+}
+
+#partida{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#jugar{
+    padding-left: 170px;
+    background-color:darkslategrey;
+    color:lightgreen;
+    padding: 6px;
+    border-radius: 10px;
+    box-shadow: rgb(160, 247, 205) 5px 5px 10px inset;
+    font-weight: bold;
+}
+
+#jugar:hover {
+    background-color:lightgreen;
+    color:darkslategrey;
+}
