@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>The XMLHttpRequest Object</h1>
+
+<div id="demo">
+    <button type="button" onclick="peticionAjaxFetch()">Enviar petición</button>
+</div>
+
+<script>
+    function peticionAjaxFetch(){
+        fetch('datos.txt')
+        .then(response => {
+            // Handle the response
+            response.text().then(data => console.log(data));
+
+        })
+        .catch(error => {
+            // Handle the error
+        })
+    }
+
+    //  function peticionAjaxFetch(){
+    //     fetch('datos.txt')
+    //     .then(response => {
+    //         // Handle the response
+    //         response.text().then(data => {
+    //             document.getElementById("demo").innerHTML = data;
+    //         });
+
+    //     })
+    //     .catch(error => {
+    //         // Handle the error
+    //     })
+    // }
+
+</script>
+
+</body>
+
+</html>
