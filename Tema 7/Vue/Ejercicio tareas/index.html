@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="../jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div id="misnotas">
+        <h1>MIS TAREAS</h1>
+        <label for="nota">Escribe tu tarea </label>
+        <input type="text" v-model="nuevaTarea">
+        <button v-on:click="agregar">Añadir tarea</button>
+        <br>
+
+        <ul v-for="tarea in tareas">
+            <input type="checkbox" v-on:click=completar>
+            <li>{{tarea}}</li>
+
+
+        </ul>
+        <br>
+        <p v-model="contador">Tienes {{tareas.length}} tareas y tienes {{sincompletar}} sin completar</p>
+    </div>
+
+
+
+
+</body>
+
+</html>
